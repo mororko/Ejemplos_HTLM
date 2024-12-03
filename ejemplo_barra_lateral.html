@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Lateral con Aside</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Estilo del contenedor principal */
+        .container {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+        }
+
+        /* Contenido principal */
+        main {
+            flex: 3;
+            padding: 20px;
+        }
+
+        /* Barra lateral */
+        aside {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-left: 2px solid #ddd;
+        }
+
+        /* Estilo para encabezados y textos */
+        h1, h2, h3 {
+            margin: 0 0 10px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            aside {
+                border-left: none;
+                border-top: 2px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Contenido principal -->
+        <main>
+            <h1>Contenido Principal</h1>
+            <p>Este es el contenido principal de la página. Aquí puedes agregar artículos, texto, imágenes, o cualquier información importante.</p>
+            <h2>Sección de ejemplo</h2>
+            <p>Continúa con más contenido en esta sección. La barra lateral puede usarse para enlaces, widgets o información adicional.</p>
+        </main>
+
+        <!-- Barra lateral -->
+        <aside>
+            <h2>Barra Lateral</h2>
+            <p>La barra lateral puede contener:</p>
+            <ul>
+                <li>Enlaces útiles</li>
+                <li>Información adicional</li>
+                <li>Publicidad</li>
+                <li>Widgets</li>
+            </ul>
+            <h3>Enlaces</h3>
+            <p><a href="#enlace1">Enlace 1</a></p>
+            <p><a href="#enlace2">Enlace 2</a></p>
+        </aside>
+    </div>
+</body>
+</html>

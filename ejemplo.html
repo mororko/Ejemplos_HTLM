@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Contiene todo el código HTML de la página. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Completo de HTML</title>
+</head>
+<body> <!-- Contiene el contenido visible de la página, como texto, imágenes, y videos -->>
+    
+    <!-- Encabezados 
+        - Define metadatos de la página como el título, enlaces a hojas de estilo, scripts, y configuraciones.
+        - Aparece antes del cuerpo visible de la página.
+    -->
+    <header>
+        <h1>Título principal</h1> <!-- Representan encabezados, desde el más importante (<h1>) al menos importante (<h6>). -->>
+        <h2>Subtítulo</h2>
+        <h3>Encabezado nivel 3</h3>
+    </header>
+
+    <!-- Párrafos y texto -->
+    <main> <!-- Contenido principal -->>
+        <section>
+            <!--
+                <p>         Define un párrafo.
+                <br>        Salto de linea
+                <strong>    Negrita con énfasis semántico (importancia)
+                <b>         Negrita con énfasis semántico (importancia)
+                <em>        Cursiva con énfasis semántico (importancia)
+                <i>         Negrita con énfasis semántico (importancia)            
+            -->>
+            <p>Este es un <strong>párrafo</strong> con <em>énfasis</em> y una línea<br>nueva.</p>
+            <p>También tenemos texto en <b>negrita</b> y <i>cursiva</i>.</p>
+        </section>
+
+        <!-- Enlaces e imágenes -->
+        <section>
+            <h2>Enlaces e imágenes</h2>
+            <!--
+                <a>         Define hipervínculo
+                <img>       Inserta una imagen. Requiere el atributo src para la URL de la imagen y opcionalmente alt para texto alternativo.
+            -->>
+            <p><a href="https://ejemplo.com" target="_blank">Visitar Ejemplo</a></p>
+            <img src="https://via.placeholder.com/150" alt="Ejemplo de imagen">
+        </section>
+
+        <!-- Listas
+            <ul>        Define listas no ordenadas 
+            <ol>        Define listas ordenadas
+            <li>        Define un elemento dentro de una lista.
+        -->
+        <section>
+            <h2>Listas</h2>
+            <h3>Lista no ordenada:</h3>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+            <h3>Lista ordenada:</h3>
+            <ol>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ol>
+        </section>
+
+        <!-- Tablas 
+            <tr>:       Define una fila de tabla.
+            <th>:       Define una celda de encabezado.
+            <td>:       Define una celda de datos. 
+        -->
+        <section>
+            <h2>Tablas</h2>
+            <table border="1">
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                </tr>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                </tr>
+                <tr>
+                    <td>Dato 3</td>
+                    <td>Dato 4</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Formularios -->
+        <section>
+            <h2>Formulario</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <!-- Crea campos de entrada, como texto, contraseñas, etc. -->>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"><br><br>
+                <label for="email">Correo:</label>
+                <!-- Crea campos de entrada, como texto, contraseñas, etc. -->>
+                <input type="email" id="email" name="email" placeholder="Escribe tu correo"><br><br>
+                <!-- Crea un botón interactivo -->>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Multimedia -->
+        <section>
+            <h2>Contenido multimedia</h2>
+            <audio controls> <!-- Insertan contenido de audio -->>
+                <source src="audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <br>
+            <video controls width="320" height="240"> <!-- Insertan contenido de video. -->>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
+
+        <!-- Elementos semánticos -->
+        <section> <!-- Seccion : Para agrupar contenido relacionado -->>
+            <h2>Elementos semánticos</h2>
+            <article> <!-- Articulo : Para contenido independiente (artículos) -->>
+                <h3>Artículo</h3>
+                <p>Este es un artículo independiente.</p>
+            </article>
+            <aside> <!-- Barra lateral : Para contenido relacionado como barras laterales. -->>
+                <h3>Barra lateral</h3>
+                <p>Este es contenido relacionado.</p>
+            </aside>
+        </section>
+
+        <!-- Contenido externo -->
+        <section>
+            <h2>Contenido externo (iframe)</h2>
+            <!-- <iframe> Inserta contenido externo como un mapa o un video. -->>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <!-- Menu de navegación -->>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+
+        <!-- Div y Span 
+            <div>       Agrupa elementos, principalmente para aplicar estilos o scripts
+            <span>      Agrupa texto o elementos en línea para estilos o scripts específicos. 
+        
+        -->
+        <section>
+            <h2>Uso de <code>div</code> y <code>span</code></h2>
+            <div style="background-color: lightgray; padding: 10px;">
+                <p>Este es un contenedor usando <code>div</code>.</p>
+                <p><span style="color: red;">Este texto es rojo</span> dentro de un párrafo.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer> <!-- Pie de pagina -->>
+        <p>&copy; 2024 Ejemplo Completo de HTML</p>
+    </footer>
+</body>
+</html>
